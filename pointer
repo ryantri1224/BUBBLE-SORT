@@ -1,0 +1,16 @@
+#include <stdio.h> 
+main(){ 
+int *pointer; 
+int DATA1; 
+DATA1=27; 
+printf(" Isi variabel DATA1 = %d",DATA1); 
+printf("\n Alamat variabel DATA1 = %d",&DATA1); 
+printf("\n Alamat variabel *pointer = %d",&pointer); 
+printf("\n Isi variabel *pointer = %d",pointer); 
+pointer=&DATA1; 
+printf("\n Alamat variabel *pointer = %d",&pointer); 
+printf("\n Isi variabel *pointer = %d",pointer); 
+printf("\n Isi dari alamat %d = %d",pointer,*pointer); 
+printf("\n"); 
+return 0; 
+}
